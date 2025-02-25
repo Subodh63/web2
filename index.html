@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLPB5T1MDP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLPB5T1MDP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LLPB5T1MDP');
+    </script>
 
-  gtag('config', 'G-LLPB5T1MDP');
-</script>
+    <!-- Meta Tags for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
+    <meta name="description" content="Learn web development with a simple HTML & CSS page.">
+    <meta name="keywords" content="HTML, CSS, Web Development, Learn Web Design">
+    <meta name="author" content="Your Name">
+    <link rel="canonical" href="https://yourwebsite.com/simple-web-page">
+
+    <!-- Open Graph Meta Tags (For Social Sharing) -->
+    <meta property="og:title" content="Learn Web Development | Simple HTML & CSS Page">
+    <meta property="og:description" content="Step-by-step guide to building a simple web page with HTML & CSS.">
+    <meta property="og:image" content="https://yourwebsite.com/preview.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/simple-web-page">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <title>Learn Web Development | Simple HTML & CSS Page</title>
+
+    <!-- SEO-Friendly CSS -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,6 +54,10 @@
             text-decoration: none;
             padding: 10px 20px;
             display: inline-block;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFD700;
         }
         main {
             padding: 20px;
@@ -48,19 +70,41 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
+
 <body>
-    <header>Welcome to My Web Page</header>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="index.html" aria-label="Home Page">Home</a>
+        <a href="about.html" aria-label="Learn About Us">About</a>
+        <a href="contact.html" aria-label="Contact Us">Contact</a>
     </nav>
+
     <main>
         <div class="container">
             <h2>Hello, World!</h2>
             <p>This is a simple web page created with HTML and CSS.</p>
+            <p>Learn how to build and optimize your website for better SEO.</p>
+            
+            <!-- Call to Action Button -->
+            <a href="tutorials.html" class="cta-button">Start Learning</a>
         </div>
     </main>
 </body>
